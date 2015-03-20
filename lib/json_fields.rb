@@ -103,3 +103,5 @@ module JsonFields
     end
   end
 end
+
+ActiveRecord::Base.send :include, JsonFields
