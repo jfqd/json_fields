@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name        = "json_fields"
-  s.version     = "0.0.2"
+  s.version     = "0.0.3"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Jason Stirk"]
   s.email       = ["jstirk@oobleyboo.com"]
@@ -14,7 +14,10 @@ Gem::Specification.new do |s|
   else
     []
   end
+  
   s.files         = Dir['**/*'] - ignores
   s.test_files    = Dir['test/**/*','spec/**/*','features/**/*'] - ignores
   s.require_paths = ["lib"]
+  
+  s.add_dependency "json", "~> 1.8.2"
 end
